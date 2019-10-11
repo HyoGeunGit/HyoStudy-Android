@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:weightSum="7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFF"
+            app:layout_scrollFlags="scroll|enterAlways">
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.Toolbar>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="#181818"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:text="내 프로필"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:src="@drawable/imgae_drawable"
+                android:id="@+id/images"
+                app:strokeColor="#000"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp"/>
+            <ImageView
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="95dp"
+                android:src="@drawable/camera"
+                android:layout_width="50dp"
+                android:layout_height="60dp"/>
+            <TextView
+                android:layout_marginTop="150dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#181818"
+                android:text="심효근"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#2c75e4"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="170dp"
+                android:layout_height="wrap_content"
+                android:text="LV.10"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            tools:listitem="@layout/item_recycler"
+            tools:itemCount="10"
+            android:id="@+id/recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

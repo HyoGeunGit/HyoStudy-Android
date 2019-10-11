@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:padding="160dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="주차요원에 \n대한 직업 가이드입니다"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/gogogogo"
+        android:layout_marginTop="380dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/button_gogogo"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
